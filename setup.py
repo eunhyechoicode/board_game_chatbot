@@ -1,3 +1,4 @@
+
 from setuptools import setup, find_packages
 
 setup(
@@ -5,12 +6,20 @@ setup(
     version="0.1.0",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
-    # Test dependencies should be specified separately
+    install_requires=[
+        "streamlit",
+        "python-dotenv",
+        "openai",
+        "langchain",
+        "langchain-openai",
+        "pinecone-client",
+        "langsmith",
+    ],
     extras_require={
         "test": [
             "pytest",
             "pytest-cov",
-            # other test dependencies
         ],
     },
+    python_requires=">=3.9",
 )
