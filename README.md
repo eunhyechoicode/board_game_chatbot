@@ -37,6 +37,7 @@ Let's play Flip7! 🎉
 1. Clone repo
 2. Create `.env` from template
 3. Add your API keys
+4. Run locally: `streamlit run src/board_game_chatbot/main.py`
 
 ## Features 🌟
 
